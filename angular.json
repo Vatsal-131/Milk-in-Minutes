@@ -15,7 +15,7 @@
           "options": {
             "outputPath": "dist/milk-in-minutes",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "main": "src/main.ts",  // Updated from "browser" to "main"
             "polyfills": [
               "zone.js"
             ],
@@ -56,12 +56,15 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "Milk-in-Minutes:build"
+          },
           "configurations": {
             "production": {
-              "buildTarget": "Milk-in-Minutes:build:production"
+              "browserTarget": "Milk-in-Minutes:build:production"
             },
             "development": {
-              "buildTarget": "Milk-in-Minutes:build:development"
+              "browserTarget": "Milk-in-Minutes:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -69,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "Milk-in-Minutes:build"
+            "browserTarget": "Milk-in-Minutes:build"
           }
         },
         "test": {
