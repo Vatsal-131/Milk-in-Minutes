@@ -1,0 +1,85 @@
+
+<div class="cart-container" *ngIf="currentStep === 1">
+  <h2>Order Details</h2>
+  <div *ngFor="let cartItem of cartService.getCartItems()" class="cart-item">
+    <!-- Display cart item details here -->
+    <img [src]="cartItem.product.imageUrl" alt="{{ cartItem.product.name }} Image" class="cart-item-image" />
+    <div class="cart-item-details">
+      <h3>Product Name: {{ cartItem.product.name }}</h3>
+      <p>Price: ${{ cartItem.product.price }}</p>
+      <p>Quantity: {{ cartItem.quantity }}</p>
+
+      
+    <button (click)="decreaseQuantity(cartItem)">-</button>
+    <button (click)="increaseQuantity(cartItem)">+</button>
+    
+    <button (click)="removeFromCart(cartItem)">Remove from cart</button>
+    </div>
+  </div>
+  <div class="total-amount">
+    <p>Total Amount: ${{ cartService.getTotalAmount() }}</p>
+
+      <!-- Remove from Cart button -->
+  </div>
+  <button (click)="goToNextStep()">Proceed to CheckOut</button>
+  <button (click)="continueShopping()">Add Another Item</button>
+
+</div>
+
+<div class="cart-container" *ngIf="currentStep === 2">
+  <h2>Add Address</h2>
+  <form (ngSubmit)="placeOrder()" #addressForm="ngForm">
+    <div>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" [(ngModel)]="fname" required>
+    </div>
+
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" [(ngModel)]="lastName" required>
+    </div>
+
+    <div>
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" [(ngModel)]="address" required>
+    </div>
+
+    <div>
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" [(ngModel)]="city" required>
+    </div>
+
+    <div>
+      <label for="zipCode">Zip Code:</label>
+      <input type="text" id="zipCode" name="zipCode" [(ngModel)]="zipCode" required>
+    </div>
+
+    <!-- Add more address fields as needed -->
+
+    <button type="submit">Continue</button>
+  </form>
+</div>
+
+<!-- Step 3: Order placed successfully -->
+<div class="cart-container" *ngIf="currentStep === 3">
+  <p>Customer Name: {{ fname }} {{ lastName }}</p>
+  <p>Address: {{ address }}, {{ city }}, {{ zipCode }}</p>
+
+  <h3>Ordered Products:</h3>
+  <div *ngFor="let cartItem of cartService.getCartItems()" class="cart-item">
+    <!-- Display cart item details here -->
+    <img [src]="cartItem.product.imageUrl" alt="{{ cartItem.product.name }} Image" class="cart-item-image" />
+    <div class="cart-item-details">
+      <h4>Product Name: {{ cartItem.product.name }}</h4>
+      <p>Price: ${{ cartItem.product.price }}</p>
+      <p>Quantity: {{ cartItem.quantity }}</p>
+    </div>
+  </div>
+
+  <div class="total-amount">
+    <p>Total Amount: ${{ cartService.getTotalAmount() }}</p>
+  </div>
+
+  <button (click)="confirmOrder()">Confirm Order</button>
+  <button (click)="continueShopping()">Shop More</button> 
+</div>  

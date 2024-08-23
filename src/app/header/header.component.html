@@ -1,0 +1,14 @@
+  <!-- header.component.html -->
+  <header>   
+          <img src="../assets/logo.png" alt="logo here" routerLink="">
+          <div> <h2><a href="/" class="logo">Milk-in-Minutes</a></h2></div>
+          <nav>
+            <span><mat-icon><a routerLink="/login" [matTooltip]="hometooltip">person</a></mat-icon></span>
+            <span><mat-icon><a routerLink="/cart-page" [matTooltip]="carttooltip">shopping_cart</a></mat-icon></span>
+            <a *ngIf="cartService.getCartItemCount() > 0" class="Add">
+              {{ cartService.getCartItemCount() }}
+            </a>
+          </nav>
+  </header>
+  
+        

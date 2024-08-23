@@ -1,0 +1,18 @@
+<header>
+  <div><img src="../assets/logo.png" alt="logo here" routerLink="/dashboard">
+    <h2><a href="#" routerLink="/dashboard">Milk-in-Minutes</a></h2>
+  </div>
+  
+  <nav>
+    <span *ngIf="customer"><a class="Add">Welcome, {{ customer.fname }}</a></span>
+    <span><mat-icon routerLink="/order">add_shopping_cart</mat-icon> </span>
+      <a *ngIf="cartService.getCartItemCount() > 0">
+        {{ cartService.getCartItemCount() }}
+      </a>
+    <span (click)="logout()"><mat-icon>logout</mat-icon></span>
+  </nav>
+</header>
+
+
+
+

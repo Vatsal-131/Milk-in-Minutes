@@ -1,0 +1,46 @@
+header{
+  background-color: #333333;
+  margin: 0;
+  border-bottom: 1px solid  #333333;
+  padding: 20px;
+}
+
+nav{
+  display: inline;
+  float: right;
+  margin-top: -40px;
+} 
+span{
+      margin-left: 20px;
+}
+
+a:hover{
+  color:#B76E79;
+
+  }
+a{
+  font-size:x-large;
+  color: #B76E79;     ;
+}
+
+.logo{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #B76E79 ;
+  margin-top: 0px;
+}   
+.Add{
+  font-size: 1em;
+}
+.logo:hover {
+  color:antiquewhite;
+  font-size:1.5em;
+}
+
+img{
+  height: 60px;
+}
+h2{
+  margin-left: 80px;
+  margin-top: -50px;
+}

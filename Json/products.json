@@ -1,0 +1,117 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "price":34,
+      "name": "Milk",
+      "tags": ["Milk"],
+      "imageUrl": "/assets/milk.jpg",
+      "description": "Fresh and nutritious milk."
+    },
+    {
+      "id": 2,
+      "price":80,
+      "name": "Cheese",
+      "tags": ["Cheese"],
+      "imageUrl": "/assets/cheese.jpg",
+      "description": "Delicious cheese for various culinary delights."
+    },
+    {
+      "id": 3,
+      "price":50,
+      "name": "Butter",
+      "tags": ["Butter"],
+      "imageUrl": "/assets/butter.jpg",
+      "description": "Creamy and rich butter for your recipes."
+    },
+    {
+      "id": 4,
+      "price": 25,
+      "name": "Yogurt",
+      "tags": ["Yogurt"],
+      "imageUrl": "/assets/yogurt.jpg",
+      "description": "Smooth and probiotic-rich yogurt."
+    },
+    {
+      "id": 5,
+      "price": 15,
+      "name": "Buttermilk",
+      "tags": ["Milk"],
+      "imageUrl": "/assets/buttermilk.jpg",
+      "description": "Refreshing buttermilk for a cool drink."
+    },
+    {
+      "id": 6,
+      "price": 47,
+      "name": "Camelmilk",
+      "tags": ["Milk"],
+      "imageUrl": "/assets/camelmilk.jpg",
+      "description": "Nutrient-packed camel milk."
+    },
+    {
+      "id": 7,
+      "price": 120,
+      "name": "Cheeseslice",
+      "tags": ["Cheese"],
+      "imageUrl": "/assets/cheeseslice.jpg",
+      "description": "Convenient cheese slices for quick snacks."
+    },
+    {
+      "id": 8,
+      "price": 42,
+      "name": "Cowmilk",
+      "tags": ["Milk"],
+      "imageUrl": "/assets/cowmilk.jpg",
+      "description": "High-quality cow milk for your family."
+    },
+    {
+      "id": 9,
+      "price": 79,
+      "name": "Dryfruit Lassi",
+      "tags": ["Lassi"],
+      "imageUrl": "/assets/dryfruitlassi.jpg",
+      "description": "Lassi with a delightful mix of dry fruits."
+    },
+    {
+      "id": 10,
+      "price": 590,
+      "name": "Ghee",
+      "tags": ["Ghee"],
+      "imageUrl": "/assets/ghee.jpg",
+      "description": "Pure and aromatic clarified butter (ghee)."
+    },
+    {
+      "id": 11,
+      "price": 69,
+      "name": "Mango Lassi",
+      "tags": ["Lassi"],
+      "imageUrl": "/assets/mangolassi.jpg",
+      "description": "Lassi infused with the goodness of mango."
+    },
+    {
+      "id": 12,
+      "price": 468,
+      "name": "Mozzarella Cheese",
+      "tags": ["Cheese"],
+      "imageUrl": "/assets/MozzarellaCheese.jpg",
+      "description": "High-quality Mozzarella cheese for your dishes."
+    },
+    {
+      "id": 13,
+      "price": 80,
+      "name": "Paneer",
+      "tags": ["Paneer"],
+      "imageUrl": "/assets/Paneer.jpg",
+      "description": "Fresh and soft paneer for Indian recipes."
+    },
+    {
+      "id": 14,
+      "price": 140,
+      "name": "Peanutbutter",
+      "tags": ["Butter"],
+      "imageUrl": "/assets/peanutbutter.jpg",
+      "description": "Creamy peanut butter for a tasty spread."
+    }
+    
+  ]
+}

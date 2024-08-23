@@ -1,0 +1,31 @@
+<!-- signup.component.html -->
+<div class="container">
+  <form [formGroup]="signup" (ngSubmit)="signupdata()" class="form-box">
+    <h2>Create a new account</h2>
+    <h5>It's quick and easy.</h5>
+    <div class="form-group">
+      <input type="text" formControlName="fname" placeholder="Enter First Name" />
+    </div>
+
+    <div class="form-group">
+      <input type="text" formControlName="lname" placeholder="Enter Last Name" />
+    </div>
+
+    <div class="form-group">
+      <input type="text" formControlName="email" placeholder="Enter Email" />
+    </div>
+
+    <div class="form-group">
+      <input type="text" formControlName="phone" placeholder="Enter Phone Number" />
+    </div>
+    <div class="form-group">
+      <input type="password" formControlName="password" placeholder="Enter Password" />
+    </div>
+    <div class="form-group">
+      <input type="password" formControlName="confirmPassword" placeholder="Confirm Password" />
+    </div>
+
+    <button type="submit">Signup</button>
+    <span>You already have an account? <a routerLink="/login">Sign in</a></span>
+  </form>
+</div>

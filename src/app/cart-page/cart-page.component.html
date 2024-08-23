@@ -1,0 +1,31 @@
+<!-- cart-page.component.html -->
+<div *ngIf="cartItems.length > 0; else emptyCart" class="cart-container">
+  <div *ngFor="let cartItem of cartItems" class="cart-item">
+    <img [src]="cartItem.product.imageUrl" alt="{{ cartItem.product.name }} Image" class="cart-item-image" />
+    <div class="cart-item-details">
+      <h3>Product Name: {{ cartItem.product.name }}</h3>
+      <p>Details: {{ getProductDetails(cartItem.product) }}</p>
+      <p>Quantity: {{ cartItem.quantity }}</p>
+      
+      <!-- +/- buttons for quantity -->
+      <button (click)="decreaseQuantity(cartItem)">-</button>
+      <button (click)="increaseQuantity(cartItem)">+</button>
+
+      <!-- Remove from Cart button -->
+      <button (click)="removeFromCart(cartItem)">Remove from cart</button>
+    </div>
+  </div>
+
+  <div class="total-amount">
+    <p>Total Amount : {{ totalAmount }}</p>
+  </div>
+
+  <button (click)="checkout()">Checkout</button>
+</div>
+
+<ng-template #emptyCart>
+  <div class="empty-cart-message">
+    <p class="empty">Your cart is empty, add products to view your cart.</p>
+    <button (click)="goToHome()" class="Add">Go Back</button>
+  </div>
+</ng-template>

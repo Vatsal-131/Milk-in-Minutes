@@ -1,0 +1,110 @@
+.cart-container {
+  background-color: #333;
+  color: antiquewhite;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 40%;
+  margin: 20px auto;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.cart-container:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  width: calc(80% - 20px);
+  transition: transform 0.3s ease;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.cart-item:hover {
+  transform: scale(1.02);
+}
+
+.cart-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-details h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cart-item-details p {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.total-amount {
+  margin-top: 20px;
+}
+
+button {
+  margin-right: 10px;
+  background-color:antiquewhite;
+  color: #333;
+  font-family: 'Cursive', sans-serif;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d9534f;
+}
+
+/* Styles for the address form */
+.cart-container form {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.cart-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.cart-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.cart-container button[type="submit"] {
+  background-color: #ff5e3a;
+  color: white;
+}
+
+.cart-container button[type="submit"]:hover {
+  background-color: #ff3b20;
+}

@@ -1,0 +1,46 @@
+.container{
+  margin-bottom: 50px;
+}
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+    margin: 40px 0px 0px 45px;
+    background-color: white;
+    
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style for the product name */
+  .card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  /* Style for the product price and rating */
+  .card p {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Hover effect on the product card */
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+  }
+  .Add{
+    background-color: #333333;
+    color: antiquewhite;
+    height:40px;
+    width: 100px;
+    font-size: 1em;
+    border-radius:10px;
+    border: none;
+    outline: none;
+  }

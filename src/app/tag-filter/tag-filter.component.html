@@ -1,0 +1,5 @@
+<!-- tag-filter.component.html -->
+<div class="tags">
+  <button (click)="filterByTag('')">All</button>
+  <button *ngFor="let tag of tags" (click)="filterByTag(tag)">{{ tag }}</button>
+</div>

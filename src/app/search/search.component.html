@@ -1,0 +1,12 @@
+<div>
+  <input type="text" placeholder="search Items" [(ngModel)]="searchItem">
+  <button (click)="search()" class="search"><a routerLink="search/{{searchItem}}" >search</a></button>
+</div>
+
+<div *ngFor="let product of filteredProducts" class="card">
+  <img [src]="product.imageUrl" alt="{{ product.name }}" width="100" height="100"/>
+  <h3>{{ product.name }}</h3>
+  <p>Price: ${{ product.price }}</p>
+  <button (click)="addToCart(product)" class="Add">Add To Cart</button>
+</div>
+<app-not-found [visible]="!productsFound" resetLinkText="Reset" resetLinkRoute="/"></app-not-found>

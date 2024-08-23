@@ -1,0 +1,85 @@
+{
+  "customers": [
+    {
+      "id": "b9e6",
+      "fname": "Vatsal",
+      "lname": "Solanki",
+      "email": "solankivatsal131@gmail.com",
+      "phone": "09558717598",
+      "password": "123456789",
+      "confirmPassword": "123456789"
+    },
+    {
+      "id": "cf13",
+      "fname": "Darshan ",
+      "lname": "Kaushal",
+      "email": "darshan123@gmail.com",
+      "phone": "9728515198",
+      "password": "1234567",
+      "confirmPassword": "1234567"
+    },
+    {
+      "id": "8914",
+      "fname": "veeky",
+      "lname": "solanki",
+      "email": "veekysolanki17@gmail.com",
+      "phone": "9558717598",
+      "password": "123456",
+      "confirmPassword": "123456"
+    },
+    {
+      "id": "5c13",
+      "fname": "veeky",
+      "lname": "solanki",
+      "email": "veekysolanki17@gmail.com",
+      "phone": "9558717598",
+      "password": "1234567",
+      "confirmPassword": "1234567"
+    },
+    {
+      "id": "6a2c",
+      "fname": "veeky",
+      "lname": "solanki",
+      "email": "veekysolanki17@gmail.com",
+      "phone": "9558717598",
+      "password": "123456789",
+      "confirmPassword": "123456789"
+    },
+    {
+      "id": "fe71",
+      "fname": "veeky",
+      "lname": "solanki",
+      "email": "veekysolanki17@gmail.com",
+      "phone": "95587171515",
+      "password": "123456",
+      "confirmPassword": "123456"
+    },
+    {
+      "id": "0612",
+      "fname": "Vatsal",
+      "lname": "Solanki",
+      "email": "veekysolanki17@gmail.com",
+      "phone": "09558717598",
+      "password": "12345678",
+      "confirmPassword": "12345678"
+    },
+    {
+      "id": "377f",
+      "fname": "sandhya",
+      "lname": "sandhya",
+      "email": "sandhya@gmail.com",
+      "phone": "0000000000",
+      "password": "123456",
+      "confirmPassword": "123456"
+    },
+    {
+      "id": "c73e",
+      "fname": "sandhya",
+      "lname": "sandhya",
+      "email": "sandhya@gmail.com",
+      "phone": "0000000000",
+      "password": "1234567",
+      "confirmPassword": "1234567"
+    }
+  ]
+}
